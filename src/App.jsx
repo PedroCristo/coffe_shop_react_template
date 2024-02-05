@@ -17,7 +17,6 @@ function App() {
       <HomeSection />
       <ServicesSection />
       <ShopSection />
-      <ServicesSection />
       <MenuSection />
       <GallerySection />
       <AboutSection />
