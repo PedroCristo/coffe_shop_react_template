@@ -1,5 +1,4 @@
 /* GOOGLE FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Fenix&family=Poppins:wght@100;200;300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fenix&family=Poppins:wght@100;200;300;400;500&family=Pushster&display=swap');
 
 /* GENERAL STYLES */
@@ -23,7 +22,7 @@ body {
     background: #000;
 }
 
-.overlay{
+.overlay {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
@@ -38,6 +37,10 @@ body {
 
 .red {
     color: rgb(185, 33, 33);
+}
+
+.font-pushster {
+    font-family: 'Pushster', cursive;
 }
 
 .info {
@@ -424,7 +427,7 @@ header nav a:hover {
 }
 
 .shop1 .stars i {
-    margin: 0px  1px;
+    margin: 0px 1px;
     font-size: 12px;
 }
 
@@ -536,7 +539,6 @@ header nav a:hover {
 }
 
 /* GALLERY SECTION */
-
 .menu-link a:hover {
     background: transparent;
 }
@@ -595,6 +597,73 @@ header nav a:hover {
 
 .bg-gallery .event:hover .overlay {
     opacity: 1;
+}
+
+/* TESTIMONIALS SECTION */
+.testimonials {
+    padding: 0 35px;
+    z-index: 100;
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+
+.testimonials .fa-solid {
+    font-size: 2rem;
+}
+
+.testimonials h2 {
+    margin-bottom: 50px;
+}
+
+.testimonials .social-box i {
+    font-size: 1.2rem;
+    padding-bottom: 25px;
+    margin: 5px;
+    color: rgb(136, 127, 127);
+}
+
+.testimonials .stars i,
+.fa-solid  {
+    font-size: 1rem;
+    padding-top: 25px;
+    margin: 5px;
+    color: rgb(230, 216, 141);
+}
+
+/* owl-carousel */
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+    width: 50px;
+    font-size: 3rem;
+}
+
+.owl-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(360deg) !important;
+}
+
+.testimonials .item {
+    text-align: center;
+    cursor: pointer;
+}
+
+.testimonials .item h3 {
+    font-size: 2rem;
+}
+
+.testimonials .item img {
+    width: 100px;
+    height: 100px;
+    margin: 25px auto;
+    border-radius: 50%;
+}
+
+.testimonials .item p {
+    width: 350px;
+    margin: 0 auto;
+    font-size: 1.1rem;
 }
 
 /* ABOUT SECTION */
@@ -681,7 +750,7 @@ header nav a:hover {
 }
 
 .footer .overlay {
-   background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .footer-flex .footer1 {

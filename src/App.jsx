@@ -8,6 +8,7 @@ import MenuSection from "./components/MenuSection";
 import GallerySection from "./components/GallerySection";
 import AboutSection from "./components/AboutSection";
 import Footer from "./components/Footer";
+import Carousel from "./components/Testimonials";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <ShopSection />
       <MenuSection />
       <GallerySection />
+      <Carousel />
       <AboutSection />
       <Footer />
     </div>
