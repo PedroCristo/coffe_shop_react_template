@@ -155,7 +155,7 @@ header nav a:hover {
 /* HOME SECTION */
 .home-section {
     background-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 0.5861695019804797) 47%),
-        linear-gradient(180deg, rgba(0, 0, 0, 0) 96%, rgba(0, 0, 0, 1) 100%), url(images/bg_images/bg7.jpg);
+        linear-gradient(180deg, rgba(0, 0, 0, 0) 96%, rgba(0, 0, 0, 1) 100%), url(../images/bg_images/bg7.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
