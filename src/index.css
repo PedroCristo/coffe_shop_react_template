@@ -616,7 +616,7 @@ header nav a:hover {
 }
 
 .testimonials .social-box i {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding-bottom: 25px;
     margin: 5px;
     color: rgb(136, 127, 127);
@@ -650,7 +650,7 @@ header nav a:hover {
 }
 
 .testimonials .item h3 {
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 .testimonials .item img {
@@ -663,7 +663,7 @@ header nav a:hover {
 .testimonials .item p {
     width: 350px;
     margin: 0 auto;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 /* ABOUT SECTION */

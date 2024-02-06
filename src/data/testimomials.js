@@ -89,7 +89,7 @@ const testimonialsData = [
     {
         id: 6,
         name: "Sophia Rose",
-        content: "Cozy ambiance, friendly staff, and delicious coffee. Perfect spot for catching up with friends or enjoying a quiet moment",
+        content: "Smooth espresso with a hint of sweetness. The staff is knowledgeable and the decor is charming. Can't wait to return",
          imageUrl:"images/testimonials_images/testimonial_6.jpg",
         social: [
             { id: 1, linkURL: "https://www.facebook.com/", socialIcon: "fab fa-facebook-f" },
