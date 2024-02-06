@@ -32,6 +32,14 @@ body {
     right: 0;
 }
 
+.green {
+    color: rgb(66, 189, 62);
+}
+
+.red {
+    color: rgb(185, 33, 33);
+}
+
 .info {
     background: #000;
     color: #FFF;
