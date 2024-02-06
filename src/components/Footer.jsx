@@ -3,6 +3,7 @@ import SocialData from "../data/social";
 function Footer() {
   return (
     <div className="footer" id="contact">
+      <div className="overlay"></div>
       <div className="footer-flex">
         <div className="footer1">
           <div>
