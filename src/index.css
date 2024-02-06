@@ -414,8 +414,9 @@ header nav a:hover {
     font-size: 1.2rem;
 }
 
-.shop1 .gold {
-    color: gold;
+.shop1 .gold,
+.fa-star-half {
+    color: rgb(255, 215, 0);
 }
 
 .shop1 .stars {
@@ -423,7 +424,7 @@ header nav a:hover {
 }
 
 .shop1 .stars i {
-    margin: 0px -2px;
+    margin: 0px  1px;
     font-size: 12px;
 }
 
