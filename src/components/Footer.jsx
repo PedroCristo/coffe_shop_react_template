@@ -35,15 +35,15 @@ function Footer() {
               <i className="fas fa-map-marker-alt"></i>
             </span>
             <a href="#">our location</a>
-            <section>egypt, el gharbia, kz</section>
+            <section>123 Main Street, Anytown, USA 12345</section>
           </div>
           <div className="location">
             <span>
               <i className="fas fa-phone"></i>
             </span>
             <a href="#">our phone</a>
-            <section>+015-544-084-94</section>
-            <section>+015-544-084-94</section>
+            <section>+555-123-4567</section>
+            <section>+555-5838945</section>
           </div>
         </div>
         <div className="footer1">
