@@ -7,7 +7,7 @@ import testimonialsData from "../data/testimomials";
 const Carousel = () => {
 
   return (
-    <section className="testimonials">
+    <section className="testimonials" id="testimonials">
     <h2 className="font-pushster">Testimonials</h2>
     <OwlCarousel
       className="owl-theme"

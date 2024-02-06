@@ -3,7 +3,7 @@ import galleryImagesData from "../data/galleryImages";
 
 function GallerySection() {
     return(
-            <div className="bg-gallery">
+            <div className="bg-gallery" id="gallery">
               <div className="gallery-flex">
                 {/* First Image */}
                 <div className="image-one event">

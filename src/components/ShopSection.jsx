@@ -1,6 +1,16 @@
-import shopProductsData from "../data/shopProducts";
+import React, { useState } from 'react';
+import shopProductsData from '../data/shopProducts'; // Assuming you have your product data in a separate file
 
 function ShopSection() {
+  const [selectedCategory, setSelectedCategory] = useState('all');
+
+  const handleCategoryChange = (category) => {
+    setSelectedCategory(category);
+  };
+
+  // Filter products based on the selected category
+  const filteredProducts = selectedCategory === 'all' ? shopProductsData : shopProductsData.filter(product => product.category === selectedCategory);
+
   return (
     <div className="bg-shop" id="shop">
       <div className="shop-links">
@@ -8,25 +18,22 @@ function ShopSection() {
           <h2>products</h2>
         </div>
         <div className="links">
-          <li data-filter="all">all</li>
-          <li data-filter=".coffee">coffee</li>
-          <li data-filter=".machines">machines</li>
-          <li data-filter=".sweets">sweets</li>
+          <li onClick={() => handleCategoryChange('all')} data-filter="all">all</li>
+          <li onClick={() => handleCategoryChange('coffee')} data-filter=".coffee">coffee</li>
+          <li onClick={() => handleCategoryChange('machines')} data-filter=".machines">machines</li>
+          <li onClick={() => handleCategoryChange('sweets')} data-filter=".sweets">sweets</li>
         </div>
       </div>
       <div className="shop-flex consts">
-        {shopProductsData.map((product) => {
-          // Calculate discount percentage
-          const discountPercentage =
-            ((product.oldPrice - product.price) / product.oldPrice) * 100;
+        {filteredProducts.map((product) => {
+          const discountPercentage = ((product.oldPrice - product.price) / product.oldPrice) * 100;
 
           return (
-            <div className="shop1 mix coffee" key={product.id}>
+            <div className={`shop1 mix ${product.category}`} key={product.id}>
               <div className="shop-image">
                 <img src={product.imageUrl} alt={product.name} />
-                {/* Display discount percentage */}
                 {discountPercentage === 0 ? (
-                  <div className="price red">Promotion not availabe</div>
+                  <div className="price red">Promotion not available</div>
                 ) : (
                   <div className="price green">-{discountPercentage.toFixed(0)}%</div>
                 )}
@@ -44,9 +51,7 @@ function ShopSection() {
                   <i key={icon.id} className={icon.star}></i>
                 ))}
               </div>
-              {/* Display product price */}
               <article>€{product.price.toFixed(2)}</article>
-              {/* Display old price */}
               {product.price === product.oldPrice ? (
                 <span></span>
               ) : (

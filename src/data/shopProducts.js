@@ -2,6 +2,7 @@ const shopProductsData = [
     {
       id: 1,
       name: "Hot Coffee",
+      category: "coffee",
       social: [
         { id: 1, linkURL: "/", socialIcon: "far fa-heart" },
         { id: 2, linkURL: "/", socialIcon: "fas fa-shopping-cart" },
@@ -23,6 +24,7 @@ const shopProductsData = [
     {
       id: 2,
       name: "Espresso Blend",
+      category: "coffee",
       social: [
         { id: 1, linkURL: "/", socialIcon: "far fa-heart" },
         { id: 2, linkURL: "/", socialIcon: "fas fa-shopping-cart" },
@@ -44,6 +46,7 @@ const shopProductsData = [
     {
       id: 3,
       name: "Medium Roast",
+      category: "coffee",
       social: [
         { id: 1, linkURL: "/", socialIcon: "far fa-heart" },
         { id: 2, linkURL: "/", socialIcon: "fas fa-shopping-cart" },
@@ -66,6 +69,7 @@ const shopProductsData = [
     {
       id: 4,
       name: "Dark Roast",
+      category: "coffee",
       social: [
         { id: 1, linkURL: "/", socialIcon: "far fa-heart" },
         { id: 2, linkURL: "/", socialIcon: "fas fa-shopping-cart" },
@@ -87,6 +91,7 @@ const shopProductsData = [
     {
       id: 5,
       name: "Premium Coffee Machine",
+      category: "machines",
       social: [
         { id: 1, linkURL: "/", socialIcon: "far fa-heart" },
         { id: 2, linkURL: "/", socialIcon: "fas fa-shopping-cart" },
@@ -108,6 +113,7 @@ const shopProductsData = [
     {
       id: 6,
       name: "Automatic Espresso Maker",
+      category: "machines",
       social: [
         { id: 1, linkURL: "/", socialIcon: "far fa-heart" },
         { id: 2, linkURL: "/", socialIcon: "fas fa-shopping-cart" },
@@ -129,6 +135,7 @@ const shopProductsData = [
     {
       id: 7,
       name: "Single Serve Coffee Maker",
+      category: "machines",
       social: [
         { id: 1, linkURL: "/", socialIcon: "far fa-heart" },
         { id: 2, linkURL: "/", socialIcon: "fas fa-shopping-cart" },
@@ -150,6 +157,7 @@ const shopProductsData = [
     {
       id: 8,
       name: "Cold Brew Coffee Maker",
+      category: "machines",
       social: [
         { id: 1, linkURL: "/", socialIcon: "far fa-heart" },
         { id: 2, linkURL: "/", socialIcon: "fas fa-shopping-cart" },

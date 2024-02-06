@@ -16,11 +16,21 @@ const headerNavigationData = [
     },
     {
         id: 4,
+        name: "Gallery",
+        linkUrl: "#gallery"
+    },
+    {
+        id: 5,
+        name: "Testimonials",
+        linkUrl: "#testimonials"
+    },
+    {
+        id: 6,
         name: "About",
         linkUrl: "#about"
     },
     {
-        id: 5,
+        id: 7,
         name: "Contatc",
         linkUrl: "#contact"
     },
