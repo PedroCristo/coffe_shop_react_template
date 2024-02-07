@@ -4,6 +4,24 @@
     }
 }
 
+@media(max-width: 991px) {
+    .menu-flex .menu1 {
+        width: 100%;
+    }
+
+    .shop-flex .shop1 {
+        width: 49%;
+    }
+
+    .bg-service .service-one {
+        width: 49%;
+    }
+
+    .footer-flex .footer1 {
+        width: 49%;
+    }
+}
+
 
 @media(max-width: 768px) {
     .info {
@@ -25,8 +43,17 @@
         flex-direction: column;
         height: 100vh;
         width: 50%;
-        background: #000;
+        background: rgba(0, 0, 0, 0.9);
     }
+
+    header .navigation.show {
+        left: 0 !important;
+    }
+
+    .image-rotate {
+        transform: rotate(-90deg);
+    }
+
 
     header .navigation li {
         margin: 10px 0px;
@@ -68,6 +95,14 @@
         display: none;
     }
 
+    .about-flex {
+        flex-wrap: wrap;
+    }
+
+    .about-flex .about1 {
+        width: 100%;
+    }
+
     .testimonials .item p {
         width: 450px;
         margin: 0 auto;
@@ -79,15 +114,42 @@
     .home-content h1 {
         font-size: 2rem;
     }
-    
+
     .home-content p {
         font-size: 13px;
     }
-    
+
     .home-content h1 br {
         display: none;
     }
+
     .bg-service .service-one {
+        width: 100%;
+    }
+
+    .shop-flex .shop1 {
+        width: 100%;
+    }
+
+    .bg-shop .shop-links {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .gallery-flex .image-one {
+        width: 100%;
+    }
+
+    .inside-gallery {
+        width: 100%;
+    }
+
+    .testimonials .item p {
+        width: 365px;
+        padding: 0 25px;
+    }
+
+    .footer-flex .footer1 {
         width: 100%;
     }
 }
@@ -97,66 +159,8 @@
         flex-direction: column;
         grid-row-gap: 15px;
     }
-}
 
-@media(max-width: 991px) {
-    .bg-service .service-one {
-        width: 49%;
-    }
-}
-
-@media(max-width: 991px) {
-    .shop-flex .shop1 {
-        width: 49%;
-    }
-}
-
-@media(max-width: 576px) {
-    .shop-flex .shop1 {
-        width: 100%;
-    }
-
-    .bg-shop .shop-links {
-        flex-direction: column;
-        justify-content: center;
-    }
-}
-
-@media(max-width: 576px) {
-    .gallery-flex .image-one {
-        width: 100%;
-    }
-
-    .inside-gallery {
-        width: 100%;
-    }
-}
-
-@media(max-width: 768px) {
-    .about-flex {
-        flex-wrap: wrap;
-    }
-
-    .about-flex .about1 {
-        width: 100%;
-    }
-
-}
-
-@media(max-width: 991px) {
-    .footer-flex .footer1 {
-        width: 49%;
-    }
-}
-
-@media(max-width: 576px) {
-    .footer-flex .footer1 {
-        width: 100%;
-    }
-}
-
-@media(max-width: 991px) {
-    .menu-flex .menu1 {
-        width: 100%;
+    .testimonials .item p {
+        width: 235px;
     }
 }

@@ -708,6 +708,7 @@ header nav a:hover {
 
 .about1-txt h3 {
     font-weight: 700;
+    letter-spacing: 2px;
     text-transform: uppercase;
     font-family: 'Pushster', cursive;
     width: 100%;

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import shopProductsData from '../data/shopProducts'; // Assuming you have your product data in a separate file
-
+import shopProductsData from '../data/shopProducts'; 
 function ShopSection() {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
