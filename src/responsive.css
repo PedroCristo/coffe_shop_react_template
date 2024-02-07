@@ -68,10 +68,12 @@
         width: 100%;
         margin: 15px 0;
     }
+
     .bg-service .service-one {
         width: 85%;
         margin: 15px 0;
     }
+
     .bg-service img {
         width: 100%;
     }
@@ -83,7 +85,7 @@
     .bg-menu {
         background-position: 30% 50%;
     }
-    
+
     .bg-gallery .gallery-flex {
         flex-wrap: wrap;
     }
@@ -163,6 +165,10 @@
 
     .inside-gallery {
         width: 100%;
+    }
+
+    .testimonials h2 {
+        text-align: center;
     }
 
     .testimonials .item p {

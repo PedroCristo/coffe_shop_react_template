@@ -20,7 +20,7 @@ function ShopSection() {
           <li onClick={() => handleCategoryChange('all')} data-filter="all">all</li>
           <li onClick={() => handleCategoryChange('coffee')} data-filter=".coffee">coffee</li>
           <li onClick={() => handleCategoryChange('machines')} data-filter=".machines">machines</li>
-          <li onClick={() => handleCategoryChange('sweets')} data-filter=".sweets">sweets</li>
+          <li onClick={() => handleCategoryChange('cups')} data-filter=".cups">Cups</li>
         </div>
       </div>
       <div className="shop-flex consts">
