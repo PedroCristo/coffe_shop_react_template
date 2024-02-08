@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import shopProductsData from "../data/shopProducts";
+import { Link } from 'react-router-dom';
 
 function ShopSection() {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -95,7 +96,7 @@ function ShopSection() {
         })}
       </div>
       <div className="menu-link">
-        <a href="/shop-page">Go to the full shop</a>
+        <Link to="/shop-page">Go to the full shop</Link>
       </div>
     </div>
   );

@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import PropTypes from "prop-types";
 import shopProductsData from '../data/shopProducts'; 
+import { Link } from 'react-router-dom';
+
+
 function ShopPageSection({ title }) {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
@@ -62,7 +65,7 @@ function ShopPageSection({ title }) {
         })}
       </div>
       <div className="menu-link">
-        <a href="/">Go to the home page</a>
+        <Link to="/">Go to the home page</Link>
       </div>
     </div>
   );
