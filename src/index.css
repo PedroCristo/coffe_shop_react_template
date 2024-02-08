@@ -762,7 +762,7 @@ header nav a:hover {
 }
 
 .footer .overlay {
-    background-color: rgba(0, 0, 0, 0.);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .footer-flex .footer1 {
@@ -871,7 +871,7 @@ header nav a:hover {
 }
 
 .copyright {
-    color: rgb(145, 136, 136);
+    color: rgb(207, 198, 198);
     width: 90%;
     margin: 0 auto;
     z-index: 100;
@@ -880,7 +880,7 @@ header nav a:hover {
 }
 
 .copyright hr {
-    background-color: rgb(189, 204, 194);
+    background-color: var(--main-color);
     height: 5px;
     border-radius: 5px;
 }

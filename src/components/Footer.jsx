@@ -68,7 +68,7 @@ function Footer() {
         <div className="copyright">
         <hr />
           <p>
-            All Rights Reserved <i className="fas fa-copyright"></i> 2023 - {currentYear}
+            All Rights Reserved <i className="fas fa-copyright"></i> {currentYear}
           </p>
         </div>
       </div>
