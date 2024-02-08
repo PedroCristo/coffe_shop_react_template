@@ -9,6 +9,7 @@ import GallerySection from "./components/GallerySection";
 import AboutSection from "./components/AboutSection";
 import Footer from "./components/Footer";
 import Carousel from "./components/Testimonials";
+import MapSection from "./components/MapSection";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <GallerySection />
       <Carousel />
       <AboutSection />
+      <MapSection />
       <Footer />
     </div>
   );

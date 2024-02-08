@@ -253,12 +253,7 @@ header nav a:hover {
 }
 
 .service-one .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, .4);
-    width: 100%;
-    height: 100%;
+    opacity: 0.8;
 }
 
 .service-one .over-txt {
@@ -727,6 +722,20 @@ header nav a:hover {
     text-transform: capitalize;
 }
 
+/* MAP SECTION */
+
+.map {
+    color: rgb(255, 255, 255);
+}
+
+.map h2 {
+    padding: 0 35px;
+}
+
+.map iframe {
+    margin: 50px 0 60px;
+}
+
 /* FOOTER */
 .footer {
     background-image: url(/images/bg_images/bg_footer_1.jpg);
@@ -752,7 +761,7 @@ header nav a:hover {
 }
 
 .footer .overlay {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.);
 }
 
 .footer-flex .footer1 {

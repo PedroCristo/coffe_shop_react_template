@@ -6,7 +6,7 @@ function ServicesSection() {
       {servicesData.map((item) => (
         <div className="service-one" key={item.id}>
           <img src={item.imgUrl} alt={item.name} />
-          <div className="overla">
+          <div className="overlay">
             <div className="over-txt">
               <p>{item.name}</p>
               <h4>{item.content}</h4>
