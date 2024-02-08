@@ -730,10 +730,11 @@ header nav a:hover {
 
 .map h2 {
     padding: 0 35px;
+    margin-bottom: 25px;
 }
 
 .map iframe {
-    margin: 50px 0 60px;
+    border-radius: 15px;
 }
 
 /* FOOTER */
@@ -773,6 +774,10 @@ header nav a:hover {
     margin-bottom: 20px;
 }
 
+.footer p {
+    width: 400px;
+}
+
 .footer1 section {
     font-size: 14px;
     margin-bottom: 20px;
@@ -791,7 +796,12 @@ header nav a:hover {
     color: var(--main-color);
 }
 
-.footer1 h3 {
+.footer1 .subscribe {
+    margin-top: 25px;
+}
+
+.footer h3,
+.map h3 {
     text-transform: capitalize;
     border-bottom: 2px solid var(--main-color);
     margin-bottom: 50px;
@@ -858,4 +868,24 @@ header nav a:hover {
 
 .check label {
     font-size: 14px;
+}
+
+.copyright {
+    color: rgb(145, 136, 136);
+    width: 90%;
+    margin: 0 auto;
+    z-index: 100;
+    position: relative;
+    margin-bottom: -50px;
+}
+
+.copyright hr {
+    background-color: rgb(189, 204, 194);
+    height: 5px;
+    border-radius: 5px;
+}
+
+.copyright i {
+    color: var(--main-color);
+    padding: 0 10px;
 }

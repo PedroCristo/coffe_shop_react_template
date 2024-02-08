@@ -4,6 +4,12 @@
     }
 }
 
+@media(max-width: 1024px) {
+    .footer p {
+        width: 300px;
+    }
+}
+
 @media(max-width: 991px) {
     .menu-flex .menu1 {
         width: 100%;

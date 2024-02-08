@@ -1,6 +1,8 @@
 import SocialData from "../data/social";
+import MapSection from "./MapSection";
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <div className="footer" id="contact">
       <div className="overlay"></div>
@@ -27,6 +29,19 @@ function Footer() {
               </a>
             ))}
           </div>
+          <div className="subscribe">
+            <h3>subscribe</h3>
+            <form action="">
+              <input type="email" name="" id="" placeholder="your Email" />
+              <a href="#">subscribe</a>
+            </form>
+            <div className="check">
+              <input type="checkbox" name="" id="inpt" />
+              <label htmlFor="inpt">
+                I have read and agree to all terms & conditions.
+              </label>
+            </div>
+          </div>
         </div>
         <div className="footer1">
           <h3>contact info</h3>
@@ -47,20 +62,16 @@ function Footer() {
           </div>
         </div>
         <div className="footer1">
-          <h3>subscribe</h3>
-          <form action="">
-            <input type="email" name="" id="" placeholder="your Email" />
-            <a href="#">subscribe</a>
-          </form>
-          <div className="check">
-            <input type="checkbox" name="" id="inpt" />
-            <label htmlFor="inpt">
-              I have read and agree to all terms & conditions.
-            </label>
-          </div>
+          <MapSection />
+        </div>
+    </div>
+        <div className="copyright">
+        <hr />
+          <p>
+            All Rights Reserved <i className="fas fa-copyright"></i> 2023 - {currentYear}
+          </p>
         </div>
       </div>
-    </div>
   );
 }
 

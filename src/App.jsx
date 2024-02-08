@@ -23,7 +23,6 @@ function App() {
       <GallerySection />
       <Carousel />
       <AboutSection />
-      <MapSection />
       <Footer />
     </div>
   );
