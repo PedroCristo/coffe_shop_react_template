@@ -1,14 +1,31 @@
-import React, { useState } from 'react';
-import shopProductsData from '../data/shopProducts'; 
+import React, { useState, useEffect } from "react";
+import shopProductsData from "../data/shopProducts";
+
 function ShopSection() {
-  const [selectedCategory, setSelectedCategory] = useState('all');
+  const [selectedCategory, setSelectedCategory] = useState("all");
+  const [randomProducts, setRandomProducts] = useState([]);
 
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
   };
 
-  // Filter products based on the selected category
-  const filteredProducts = selectedCategory === 'all' ? shopProductsData : shopProductsData.filter(product => product.category === selectedCategory);
+  useEffect(() => {
+    // Filter products based on the selected category
+    const filteredProducts =
+      selectedCategory === "all"
+        ? shopProductsData
+        : shopProductsData.filter(
+            (product) => product.category === selectedCategory
+          );
+
+    // Shuffle the products array
+    const shuffledProducts = filteredProducts.sort(() => Math.random() - 0.5);
+
+    // Slice the first 8 products
+    const slicedProducts = shuffledProducts.slice(0, 8);
+
+    setRandomProducts(slicedProducts);
+  }, [selectedCategory]);
 
   return (
     <div className="bg-shop" id="shop">
@@ -17,15 +34,30 @@ function ShopSection() {
           <h2>products</h2>
         </div>
         <div className="links">
-          <li onClick={() => handleCategoryChange('all')} data-filter="all">all</li>
-          <li onClick={() => handleCategoryChange('coffee')} data-filter=".coffee">coffee</li>
-          <li onClick={() => handleCategoryChange('machines')} data-filter=".machines">machines</li>
-          <li onClick={() => handleCategoryChange('cups')} data-filter=".cups">Cups</li>
+          <li onClick={() => handleCategoryChange("all")} data-filter="all">
+            all
+          </li>
+          <li
+            onClick={() => handleCategoryChange("coffee")}
+            data-filter=".coffee"
+          >
+            coffee
+          </li>
+          <li
+            onClick={() => handleCategoryChange("machines")}
+            data-filter=".machines"
+          >
+            machines
+          </li>
+          <li onClick={() => handleCategoryChange("cups")} data-filter=".cups">
+            Cups
+          </li>
         </div>
       </div>
       <div className="shop-flex consts">
-        {filteredProducts.map((product) => {
-          const discountPercentage = ((product.oldPrice - product.price) / product.oldPrice) * 100;
+        {randomProducts.map((product) => {
+          const discountPercentage =
+            ((product.oldPrice - product.price) / product.oldPrice) * 100;
 
           return (
             <div className={`shop1 mix ${product.category}`} key={product.id}>
@@ -34,7 +66,9 @@ function ShopSection() {
                 {discountPercentage === 0 ? (
                   <div className="price red">Promotion not available</div>
                 ) : (
-                  <div className="price green">-{discountPercentage.toFixed(0)}%</div>
+                  <div className="price green">
+                    -{discountPercentage.toFixed(0)}%
+                  </div>
                 )}
                 <div className="social">
                   {product.social.map((icon) => (
@@ -59,6 +93,9 @@ function ShopSection() {
             </div>
           );
         })}
+      </div>
+      <div className="menu-link">
+        <a href="/shop-page">Go to the full shop</a>
       </div>
     </div>
   );

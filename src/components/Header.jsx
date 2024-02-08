@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import headerNavigationData from "../data/headerNavigation";
 
-function Header() {
+function Header({ homePage }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => {
@@ -10,13 +11,16 @@ function Header() {
   const toglleCloseNavbar = () => {
     setIsOpen(false);
   };
+
+  // Filter the headerData to show only the first item if homePage is not true
+  const filteredHeaderData = homePage ? headerNavigationData : [headerNavigationData[0]];
   return (
     <header>
       <div className="logo">
-        <img src="images/utilities_images/logo.png" alt="Logo" />
+        <a href="/"><img src="images/utilities_images/logo.png" alt="Logo" /></a>
       </div>
       <nav className={`navigation ${isOpen ? "show" : ""}`}>
-        {headerNavigationData.map((item) => (
+        {filteredHeaderData.map((item) => (
           <li key={item.id}>
             <a href={item.linkUrl} onClick={toglleCloseNavbar}>
               {item.name}
@@ -30,5 +34,10 @@ function Header() {
     </header>
   );
 }
+
+Header.propTypes = {
+  homePage: PropTypes.string.isRequired,
+ }
+ 
 
 export default Header;

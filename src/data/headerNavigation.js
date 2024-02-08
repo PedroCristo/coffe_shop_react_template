@@ -2,7 +2,7 @@ const headerNavigationData = [
     {
         id: 1,
         name: "Home",
-        linkUrl: "#home"
+        linkUrl: "/#home"
     },
     {
         id: 1,

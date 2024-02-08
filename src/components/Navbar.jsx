@@ -25,7 +25,7 @@ function Navbar() {
           ))}
         </div>
         <div className="info-link">
-          <a href="#">shop now</a>
+          <a href="/shop-page">shop now</a>
         </div>
       </div>
     </div>
