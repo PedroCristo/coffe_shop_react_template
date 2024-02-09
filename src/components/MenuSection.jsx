@@ -1,6 +1,17 @@
-import menuData from "../data/menu";
+// import menuData from "../data/menu";
+import useFetchCSVData from "../data/db/services";
 
 function MenuSection() {
+  const { csvData, loading, error } = useFetchCSVData();
+  console.log(csvData);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
   return (
     <div className="bg-menu" id="menu">
       <div className="overlay"></div>
@@ -11,7 +22,7 @@ function MenuSection() {
           <hr />
         </div>
         <div className="menu-flex">
-          {menuData.map((item) => (
+          {csvData.map((item) => (
             <div className="menu1" key={item.id}>
               <div className="small-image">
                 <img src={item.imageUrl} alt={item.name} />
@@ -21,7 +32,14 @@ function MenuSection() {
               </div>
               <div className="line"></div>
               <div>
-                <h4>€{item.price.toFixed(2)}</h4>
+                {item.oldPrice !=="" ? (
+                  <div>
+                    <h4 className="line-red">€ {item.oldPrice}</h4>
+                    <h4>€ {item.price}</h4>
+                  </div>
+                ) : (
+                  <h4>€ {item.price}</h4>
+                )}
               </div>
             </div>
           ))}

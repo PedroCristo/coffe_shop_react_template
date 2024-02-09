@@ -39,6 +39,12 @@ body {
     color: rgb(185, 33, 33);
 }
 
+.line-red {
+    text-decoration: line-through;
+    color: rgb(85, 85, 85);
+
+}
+
 .font-pushster {
     font-family: 'Pushster', cursive;
 }
