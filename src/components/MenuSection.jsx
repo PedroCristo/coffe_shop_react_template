@@ -33,7 +33,7 @@ function MenuSection() {
               <div>
                 {item.oldPrice !=="" ? (
                   <div>
-                    <h4 className="line-red">€ {item.oldPrice}</h4>
+                    <h4 className="menu-promotion">€ {item.oldPrice}</h4>
                     <h4>€ {item.price}</h4>
                   </div>
                 ) : (

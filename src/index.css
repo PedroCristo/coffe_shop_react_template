@@ -39,9 +39,10 @@ body {
     color: rgb(185, 33, 33);
 }
 
-.line-red {
+.menu-promotion {
     text-decoration: line-through;
     color: rgb(85, 85, 85);
+    margin: 25px;
 
 }
 
