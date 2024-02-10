@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-export default function useFetchCSVData() {
+export default function useFetchCSVData(url) {
     const [csvData, setCsvData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -9,7 +9,7 @@ export default function useFetchCSVData() {
     useEffect(() => {
         const fetchCSVData = async () => {
             try {
-                const response = await axios.get('https://docs.google.com/spreadsheets/d/e/2PACX-1vQCYaeEDOeczGVPFeOjjCWBcCSJH9FFwT7J1uV27iwTMfj53tlUpP2zia-U7FByuFBwmchQObM61Mfu/pub?output=csv');
+                const response = await axios.get(url);
                 const parsedCsvData = parseCSV(response.data);
                 setCsvData(parsedCsvData);
                 setLoading(false);
@@ -21,7 +21,7 @@ export default function useFetchCSVData() {
 
         fetchCSVData();
 
-    }, []);
+    }, [url]);
 
     function parseCSV(csvText) {
         const rows = csvText.split(/\r?\n/);

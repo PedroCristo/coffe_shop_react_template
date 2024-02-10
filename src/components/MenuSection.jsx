@@ -1,9 +1,8 @@
 // import menuData from "../data/menu";
-import useFetchCSVData from "../data/db/services";
+import useFetchCSVData from '../data/externalDB/fetchData.js';
 
 function MenuSection() {
-  const { csvData, loading, error } = useFetchCSVData();
-  console.log(csvData);
+  const { csvData, loading, error } = useFetchCSVData('https://docs.google.com/spreadsheets/d/e/2PACX-1vQCYaeEDOeczGVPFeOjjCWBcCSJH9FFwT7J1uV27iwTMfj53tlUpP2zia-U7FByuFBwmchQObM61Mfu/pub?output=csv');
 
   if (loading) {
     return <div>Loading...</div>;
@@ -51,6 +50,5 @@ function MenuSection() {
     </div>
   );
 }
-
 
 export default MenuSection;

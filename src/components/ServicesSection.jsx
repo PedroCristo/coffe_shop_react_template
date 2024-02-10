@@ -1,10 +1,9 @@
-import servicesData from '../data/services';
-import useFetchCSVData from '../data/db/services';
+// import servicesData from '../data/services';
+import useFetchCSVData from '../data/externalDB/fetchData.js';
 
 
 function ServicesSection() {
-    const { csvData, loading, error } = useFetchCSVData();
-    console.log(csvData)
+    const { csvData, loading, error } = useFetchCSVData('https://docs.google.com/spreadsheets/d/e/2PACX-1vQCYaeEDOeczGVPFeOjjCWBcCSJH9FFwT7J1uV27iwTMfj53tlUpP2zia-U7FByuFBwmchQObM61Mfu/pub?gid=0&single=true&output=csv');
 
     if (loading) {
         return <div>Loading...</div>;
@@ -16,7 +15,7 @@ function ServicesSection() {
 
     return (
         <div className="bg-service">
-            {servicesData.map((item) => (
+            {csvData.map((item) => (
                 <div className="service-one" key={item.id}>
                     <img src={item.imgUrl} alt={item.name} />
                     <div className="overlay">
