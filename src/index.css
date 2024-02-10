@@ -42,7 +42,7 @@ body {
 .menu-promotion {
     text-decoration: line-through;
     color: rgb(85, 85, 85);
-    margin: 25px;
+    margin-top: -25px;
 
 }
 
