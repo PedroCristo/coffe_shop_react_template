@@ -13,7 +13,12 @@ function HomePage() {
       <Header homePage="true" />
       <HomeSection />
       <ServicesSection />
-      <ShopSection />
+      <ShopSection
+        homePage={true}
+        title={"Products"}
+        btnLink={"/shop-page"}
+        btnTitle={"Go to the shop"}
+      />
       <MenuSection />
       <GallerySection />
       <Carousel />

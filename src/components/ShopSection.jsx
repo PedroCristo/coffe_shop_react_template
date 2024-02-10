@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 import shopProductsData from "../data/shopProducts";
 import { Link } from 'react-router-dom';
 
-function ShopSection() {
+function ShopSection({ homePage, title, btnLink, btnTitle }) {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [randomProducts, setRandomProducts] = useState([]);
 
@@ -18,21 +19,24 @@ function ShopSection() {
         : shopProductsData.filter(
             (product) => product.category === selectedCategory
           );
-
-    // Shuffle the products array
-    const shuffledProducts = filteredProducts.sort(() => Math.random() - 0.5);
-
-    // Slice the first 8 products
-    const slicedProducts = shuffledProducts.slice(0, 8);
-
-    setRandomProducts(slicedProducts);
-  }, [selectedCategory]);
+  
+    if (homePage) {
+      // Shuffle the products array
+      const shuffledProducts = filteredProducts.sort(() => Math.random() - 0.5);
+      // Slice the first 8 products
+      const slicedProducts = shuffledProducts.slice(0, 8);
+      setRandomProducts(slicedProducts);
+    } else {
+      setRandomProducts(filteredProducts);
+    }
+  }, [selectedCategory, homePage]);
+  
 
   return (
     <div className="bg-shop" id="shop">
       <div className="shop-links">
         <div>
-          <h2>products</h2>
+          <h2>{title}</h2>
         </div>
         <div className="links">
           <li onClick={() => handleCategoryChange("all")} data-filter="all">
@@ -96,10 +100,18 @@ function ShopSection() {
         })}
       </div>
       <div className="menu-link">
-        <Link to="/shop-page">Go to the full shop</Link>
+        <Link to={btnLink}>{btnTitle}</Link>
       </div>
     </div>
   );
 }
+
+ShopSection.propTypes = {
+  homePage: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  btnLink: PropTypes.string.isRequired,
+  btnTitle: PropTypes.string.isRequired,
+ }
+ 
 
 export default ShopSection;
