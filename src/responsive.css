@@ -47,7 +47,7 @@
 
     header .navigation {
         position: absolute;
-        top: 81px;
+        top: 10px;
         left: -100%;
         display: flex;
         justify-content: center;

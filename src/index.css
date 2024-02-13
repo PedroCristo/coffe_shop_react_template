@@ -121,7 +121,7 @@ body {
 }
 
 .logo {
-    width: 40%;
+    width: 35%;
 }
 
 .menu-page {
@@ -139,10 +139,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-header .logo  {
-    width: 50%;
 }
 
 header nav {
