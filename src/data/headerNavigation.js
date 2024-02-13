@@ -5,14 +5,14 @@ const headerNavigationData = [
         linkUrl: "/#home"
     },
     {
-        id: 1,
-        name: "Shop",
-        linkUrl: "#shop"
+        id: 2,
+        name: "Menu",
+        linkUrl: "#menu"
     },
     {
         id: 3,
-        name: "Menu",
-        linkUrl: "#menu"
+        name: "Shop",
+        linkUrl: "#shop"
     },
     {
         id: 4,
@@ -26,11 +26,6 @@ const headerNavigationData = [
     },
     {
         id: 6,
-        name: "About",
-        linkUrl: "#about"
-    },
-    {
-        id: 7,
         name: "Contatc",
         linkUrl: "#contact"
     },
