@@ -1,27 +1,36 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+// import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+
 import HomePage from "./pages/HomePage";
 import ShopPage from "./pages/ShopPage";
+import MenuPage from "./pages/MenuPage";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <HomePage />
-  },
-  {
-    path: "/shop-page",
-    element: <ShopPage />
-  }
+import ScrollTop from "./components/extras/ScrollTop";
 
-])
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <HomePage />,
+//   },
+//   {
+//     path: "/shop-page",
+//     element: <ShopPage />,
+//   },
+// ]);
 
 function App() {
   return (
     <div>
       <Navbar />
-      <RouterProvider router={router} />
+      <ScrollTop />
+      <Routes>
+        <Route path={"/"} exact element={<HomePage />} />
+        <Route path={"/shop-page"} exact element={<ShopPage />} />
+        <Route path={"/menu-page"} exact element={<MenuPage />} />
+      </Routes>
       <Footer />
     </div>
   );

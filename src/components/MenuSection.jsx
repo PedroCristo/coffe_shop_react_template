@@ -1,8 +1,10 @@
 // import menuData from "../data/menu";
-import useFetchCSVData from '../data/externalDB/fetchData.js';
+import useFetchCSVData from "../data/externalDB/fetchData.js";
+import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
-function MenuSection() {
-  const { csvData, loading, error } = useFetchCSVData('https://docs.google.com/spreadsheets/d/e/2PACX-1vQCYaeEDOeczGVPFeOjjCWBcCSJH9FFwT7J1uV27iwTMfj53tlUpP2zia-U7FByuFBwmchQObM61Mfu/pub?output=csv');
+function MenuSection({ homePage, menuPage, btnTitle, btnLink }) {
+  const { csvData, loading, error } = useFetchCSVData('https://docs.google.com/spreadsheets/d/e/2PACX-1vRvtHuIHiy8QhygNdJZv_8s5bAga1OGFNqb5ny2qv5505uKipkxsf6hJ_Nd6p8bXXT9L1bqVwz5lKu8/pub?output=csv');
 
   if (loading) {
     return <div>Loading...</div>;
@@ -11,17 +13,21 @@ function MenuSection() {
   if (error) {
     return <div>Error: {error.message}</div>;
   }
+
+  // If homePage is true, limit the number of products to 8
+  const filteredData = homePage === true ? csvData.slice(0, 8) : csvData;
+
   return (
-    <div className="bg-menu" id="menu">
+    <div className={`bg-menu ${menuPage}`} id="menu">
       <div className="overlay"></div>
       <div className="menu-box">
         <div className="menu-title">
-          <section>Our Coffe Menu</section>
+          <section>Our Coffee Menu</section>
           <h2>Always is time for coffee</h2>
           <hr />
         </div>
         <div className="menu-flex">
-          {csvData.map((item) => (
+          {filteredData.map((item) => (
             <div className="menu1" key={item.id}>
               <div className="small-image">
                 <img src={item.imageUrl} alt={item.name} />
@@ -31,7 +37,7 @@ function MenuSection() {
               </div>
               <div className="line"></div>
               <div>
-                {item.oldPrice !=="" ? (
+                {item.oldPrice !== "" ? (
                   <div>
                     <h4 className="menu-promotion">€ {item.oldPrice}</h4>
                     <h4>€ {item.price}</h4>
@@ -44,11 +50,18 @@ function MenuSection() {
           ))}
         </div>
         <div className="menu-link">
-          <a href="#">view menu</a>
+          <Link to={btnLink}>{btnTitle}</Link>
         </div>
       </div>
     </div>
   );
 }
+
+MenuSection.propTypes = {
+  homePage: PropTypes.string.isRequired,
+  menuPage: PropTypes.string.isRequired,
+  btnLink: PropTypes.string.isRequired,
+  btnTitle: PropTypes.string.isRequired,
+};
 
 export default MenuSection;

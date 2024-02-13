@@ -4,7 +4,7 @@ const testimonialsData = [
     {
         id: 1,
         name: "Liam James",
-        content: "Cozy ambiance, friendly staff, and delicious coffee. Perfect spot for catching up with friends or enjoying a quiet moment",
+        content: " ambCozyiance, friendly staff, and delicious coffee. Perfect spot for catching up with friends or enjoying a quiet moment",
         imageUrl:"images/testimonials_images/testimonial_1.jpg",
         social: [
             { id: 1, linkURL: "https://www.facebook.com/", socialIcon: "fab fa-facebook-f" },

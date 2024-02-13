@@ -4,7 +4,7 @@ import MapSection from "./MapSection";
 function Footer() {
   const currentYear = new Date().getFullYear();
   return (
-    <div className="footer" id="contact">
+    <div className="footer">
       <div className="overlay"></div>
       <div className="footer-flex">
         <div className="footer1">
