@@ -9,7 +9,7 @@ function Footer() {
       <div className="footer-flex">
         <div className="footer1">
           <div>
-            <img src="images/utilities_images/logo.png" alt="Logo" />
+            <img className="logo" src="images/utilities_images/logo.png" alt="Logo" />
           </div>
           <section>
             <p>

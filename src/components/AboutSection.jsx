@@ -8,7 +8,7 @@ function AboutSection() {
             <img src="/images/about_images/coffe_shop_about_2.jpg" alt="Coffe Shop" />
           </div>
           <div className="image-logo">
-          <img src="images/utilities_images/logo.png" alt="Logo" />
+          <img className="logo" src="images/utilities_images/logo.png" alt="Logo" />
           </div>
         </div>
 

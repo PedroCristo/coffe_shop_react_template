@@ -16,8 +16,8 @@ function Header({ homePage }) {
   const filteredHeaderData = homePage ? headerNavigationData : [headerNavigationData[0]];
   return (
     <header>
-      <div className="logo">
-        <a href="/"><img src="images/utilities_images/logo.png" alt="Logo" /></a>
+      <div>
+        <a href="/"><img className="logo" src="images/utilities_images/logo.png" alt="Logo" /></a>
       </div>
       <nav className={`navigation ${isOpen ? "show" : ""}`}>
         {filteredHeaderData.map((item) => (

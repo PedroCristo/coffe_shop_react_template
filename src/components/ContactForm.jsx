@@ -37,7 +37,7 @@ function ContactForm() {
             you. Don't hesitate to reach out with any questions, concerns, or
             messages. Your input helps us improve and grow
           </p>
-          <img src="images/utilities_images/girls_and_cofee.jpg" alt="Logo" />
+          <img src="images/utilities_images/girls_and_coffee.jpg" alt="Logo" />
         </div>
       </div>
     </div>
