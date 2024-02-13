@@ -1,7 +1,16 @@
 import Header from "../components/Header";
 import MenuSection from "../components/MenuSection";
+import { useEffect } from 'react';
+
 
 function MenuPage() {
+  useEffect(() => {
+    document.title = "Menu";
+    return () => {
+      document.title = "Coffe Heven Template";
+    };
+  }, []);
+
   return (
     <div>
       <Header />
