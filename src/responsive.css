@@ -177,6 +177,11 @@
         display: none;
     }
 
+    .home-content {
+        padding-left: 25px;
+    
+    }
+
     .bg-service .service-one {
         width: 100%;
     }
