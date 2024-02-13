@@ -804,16 +804,18 @@ header nav a:hover {
     color: rgb(0, 0, 0);
 }
 
+.contact-form .row .col:nth-child(2){
+    margin-top: -50px;
+}
+
 .contact-form .row .col:nth-child(2) h3, 
 .contact-form .row .col:nth-child(2) p {
     margin-bottom: 25px;
-  
 }
 
 .contact-form .row .col:nth-child(2) p {
     font-size: 1rem;
     width: 80%;
-  
 }
 
 .contact-form .row .col img {
@@ -821,7 +823,6 @@ header nav a:hover {
     margin: 0 auto;
     position: relative;
 }
-
 
 /* MAP SECTION */
 .map {
