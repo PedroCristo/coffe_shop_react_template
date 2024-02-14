@@ -1,4 +1,5 @@
 import SocialData from "../data/social";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -25,7 +26,7 @@ function Navbar() {
           ))}
         </div>
         <div className="info-link">
-          <a href="/shop-page">shop now</a>
+          <Link to="/shop-page">shop now</Link>
         </div>
       </div>
     </div>

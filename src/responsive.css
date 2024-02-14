@@ -65,12 +65,17 @@
 
     .image-rotate {
         transform: rotate(-90deg);
+        transition: .5s;
     }
-
 
     header .navigation li {
         margin: 10px 0px;
     }
+
+    header nav .dropdown-content {
+        right: -50px;
+    }
+    
 
     .home-content h1 {
         font-size: 3rem;
