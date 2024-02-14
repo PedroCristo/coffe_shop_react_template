@@ -17,8 +17,8 @@ function App() {
       <ScrollTop />
         <Routes>
           <Route path="/" exact element={<HomePage />} />
-          <Route path="/shop-page" element={<ShopPage />} />
-          <Route path="/menu-page" element={<MenuPage />} />
+          <Route path="shop-page" element={<ShopPage />} />
+          <Route path="menu-page" element={<MenuPage />} />
         </Routes>
       <Footer />
     </div>
