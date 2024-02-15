@@ -19,7 +19,6 @@ const shopProductsData = [
     imageUrl: "/images/products_images/coffee/coffee-1.png",
     price: 32.00,
     oldPrice: 45.00,
-    discount: 0,
   },
   // Add more coffee products here...
   {
@@ -42,7 +41,6 @@ const shopProductsData = [
     imageUrl: "/images/products_images/coffee/coffee-2.png",
     price: 36.00,
     oldPrice: 36.00,
-    discount: 0,
   },
   // Add more coffee products here...
   {
@@ -65,7 +63,6 @@ const shopProductsData = [
     imageUrl: "/images/products_images/coffee/coffee-3.png",
     price: 25.00,
     oldPrice: 30.00,
-    discount: 0,
   },
   // Add more coffee products here...
   {
@@ -88,7 +85,6 @@ const shopProductsData = [
     imageUrl: "/images/products_images/coffee/coffee-4.png",
     price: 30.00,
     oldPrice: 40.00,
-    discount: 0,
   },
   // Add more coffee products here...
   {
@@ -111,7 +107,6 @@ const shopProductsData = [
     imageUrl: "/images/products_images/coffee/coffee-5.png",
     price: 28.00,
     oldPrice: 35.00,
-    discount: 0,
   },
   // Add more coffee products here...
   {
@@ -134,7 +129,6 @@ const shopProductsData = [
     imageUrl: "/images/products_images/coffee/coffee-6.png",
     price: 34.00,
     oldPrice: 38.00,
-    discount: 0,
   },
   // Add more coffee products here...
   {
@@ -157,7 +151,6 @@ const shopProductsData = [
     imageUrl: "/images/products_images/coffee/coffee-7.png",
     price: 38.00,
     oldPrice: 42.00,
-    discount: 0,
   },
   // Add more coffee products here...
   {
@@ -180,7 +173,6 @@ const shopProductsData = [
     imageUrl: "/images/products_images/coffee/coffee-8.png",
     price: 40.00,
     oldPrice: 45.00,
-    discount: 0,
   },
   {
     id: 9,
@@ -202,7 +194,6 @@ const shopProductsData = [
     imageUrl: "/images/products_images/machines/machine-1.png",
     price: 300.00,
     oldPrice: 450.00,
-    discount: 0,
   },
   // Add more machine products here...
   {
@@ -225,7 +216,6 @@ const shopProductsData = [
     imageUrl: "/images/products_images/machines/machine-2.png",
     price: 260.00,
     oldPrice: 320.00,
-    discount: 0,
   },
   // Add more machine products here...
   {
@@ -248,7 +238,6 @@ const shopProductsData = [
     imageUrl: "/images/products_images/machines/machine-3.png",
     price: 220.00,
     oldPrice: 280.00,
-    discount: 0,
   },
   // Add more machine products here...
   {
@@ -271,7 +260,6 @@ const shopProductsData = [
     imageUrl: "/images/products_images/machines/machine-4.png",
     price: 320.00,
     oldPrice: 380.00,
-    discount: 0,
   },
   // Add more machine products here...
   {
@@ -294,7 +282,6 @@ const shopProductsData = [
     imageUrl: "/images/products_images/machines/machine-5.png",
     price: 380.00,
     oldPrice: 420.00,
-    discount: 0,
   },
   // Add more machine products here...
   {
@@ -317,7 +304,6 @@ const shopProductsData = [
     imageUrl: "/images/products_images/machines/machine-6.png",
     price: 200.00,
     oldPrice: 240.00,
-    discount: 0,
   },
   // Add more machine products here...
   {
@@ -338,9 +324,8 @@ const shopProductsData = [
       { id: 5, star: "far fa-star" },
     ],
     imageUrl: "/images/products_images/machines/machine-7.png",
-    price: 15.00,
-    oldPrice: 18.00,
-    discount: 0,
+    price: 205.00,
+    oldPrice: 380.00,
   },
   // Add more machine products here...
   {
@@ -361,9 +346,8 @@ const shopProductsData = [
       { id: 5, star: "far fa-star" },
     ],
     imageUrl: "/images/products_images/machines/machine-8.png",
-    price: 10.00,
-    oldPrice: 12.00,
-    discount: 0,
+    price: 280.00,
+    oldPrice: 280.00,
   },
   {
     id: 17,
@@ -385,7 +369,6 @@ const shopProductsData = [
     imageUrl: "/images/products_images/cups/cup-1.png",
     price: 20.00,
     oldPrice: 22.00,
-    discount: 0,
   },
   // Add more cup products here...
   {
@@ -408,7 +391,6 @@ const shopProductsData = [
     imageUrl: "/images/products_images/cups/cup-1.png",
     price: 25.00,
     oldPrice: 28.00,
-    discount: 0,
   },
   // Add more cup products here...
   {
@@ -431,7 +413,6 @@ const shopProductsData = [
     imageUrl: "/images/products_images/cups/cup-3.png",
     price: 20.00,
     oldPrice: 20.00,
-    discount: 0,
   },
   // Add more cup products here...
   {
@@ -454,7 +435,6 @@ const shopProductsData = [
     imageUrl: "/images/products_images/cups/cup-4.png",
     price: 15.00,
     oldPrice: 18.00,
-    discount: 0,
   },
 ];
 
