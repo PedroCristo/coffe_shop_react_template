@@ -1,9 +1,3 @@
-# Coffe Heven Template
-
-# Introduction
-<br>
-
-
 # Coffee Shop Website Template
 
 Welcome to the Coffee Shop Website Template! This template provides a modern, sleek design for building a dynamic and engaging website for your coffee shop or related business. Leveraging HTML, CSS, React, and Google Sheets as a backend database, this template offers a seamless user experience and easy management of website data.
@@ -29,7 +23,7 @@ Welcome to the Coffee Shop Website Template! This template provides a modern, sl
 
 [Live Project Here](https://coffe-shop-react-teamplate.netlify.app/)
 
-<p align="center"><img src="public/images/readme/header_image.png" alt="Coffee Haaven Template"></p>
+<p align="center"><img src="./public/images/Readme/header_image.jpg" alt="Coffee Haaven Template"></p>
 
 #### Google Sheets DB
-<p align="center"><img src="public/images/readme/coffee-shop-DB.jpg" alt="Coffee Haaven Template"></p>
+<p align="center"><img src="./public/images/Readme/coffee-shop-DB.jpg" alt="Coffee Haaven Template DB"></p>
