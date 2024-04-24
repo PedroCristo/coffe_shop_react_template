@@ -1,6 +1,7 @@
 import SocialData from "../data/social";
 import { Link } from "react-router-dom";
 
+
 function Navbar() {
   return (
     <div className="info">

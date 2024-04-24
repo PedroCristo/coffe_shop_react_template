@@ -2,21 +2,28 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 import headerNavigationData from "../data/headerNavigation";
 import { Link } from "react-router-dom";
+import ShopingCardButton from "./extras/ShoppingCardButton";
 
 function Header({ homePage }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [showCart, setShowCart] = useState(false);
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
-  const toglleCloseNavbar = () => {
+  const toggleCloseNavbar = () => { // Corrected function name
     setIsOpen(false);
+  };
+
+  const toggleCart = () => {
+    setShowCart(!showCart); // Toggle the state to show/hide the shopping cart
   };
 
   // Filter the headerData to show only the first item if homePage is not true
   const filteredHeaderData = homePage
     ? headerNavigationData
     : [headerNavigationData[0]];
+
   return (
     <header>
       <div>
@@ -31,7 +38,7 @@ function Header({ homePage }) {
       <nav className={`navigation ${isOpen ? "show" : ""}`}>
         {filteredHeaderData.map((item) => (
           <li key={item.id}>
-            <a href={item.linkUrl} onClick={toglleCloseNavbar}>
+            <a href={item.linkUrl} onClick={toggleCloseNavbar}>
               {item.name}
             </a>
           </li>
@@ -45,6 +52,7 @@ function Header({ homePage }) {
             </div>
           </div>
         </li>
+        <ShopingCardButton toggleCart={toggleCart} toggleCloseNavbar={toggleCloseNavbar} /> {/* Corrected prop name */}
       </nav>
 
       <div className="bars" onClick={toggleNavbar}>

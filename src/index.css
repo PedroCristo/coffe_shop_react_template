@@ -49,6 +49,17 @@ body {
     font-family: 'Pushster', cursive;
 }
 
+.display-none {
+    display: none;
+}
+
+.btn {
+    background-color: var(--main-color);
+    color: rgb(255, 255, 255);
+    outline: none;
+    border-radius: 0;
+}
+
 .info {
     background: #000;
     color: #FFF;
@@ -129,7 +140,7 @@ body {
 .menu-page {
     margin-top: -20px !important;
 }
- 
+
 /* HEADER */
 header {
     position: sticky;
@@ -189,12 +200,8 @@ header nav a:hover {
 }
 
 /* dropdown menu */
-header nav .dropdown {
-    /* float: left; */
-}
-
 header nav .dropdown .dropbtn {
-    font-size: 16px;  
+    font-size: 16px;
     border: none;
     outline: none;
     color: white;
@@ -209,7 +216,7 @@ header nav .dropdown-content {
     background-color: rgb(51, 51, 51);
     min-width: 160px;
     right: -5px;
-    z-index: 1;
+    z-index: 600;
 }
 
 header nav .dropdown-content a {
@@ -228,6 +235,110 @@ header nav .dropdown-content a:hover {
 
 header nav .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/* SHOPPING CART */
+.shopping-cart {
+    background-color: rgb(12, 12, 12);
+    width: 45%;
+    position: fixed;
+    height: 85vh;
+    z-index: 500;
+    right: -60%;
+    bottom: 0;
+    transition: all ease-in-out .5s;
+    padding: 35px 25px;
+    color: #c7a17a;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border-top: 3px solid  #3d3c3c;
+    border-left: 3px solid  #3d3c3c;
+}
+
+.shopping-cart h1 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.shopping-cart h3 {
+    font-size: 1rem;
+    margin-bottom: 25px;
+
+}
+
+.shopping-cart .fas {
+    font-size: 3rem;
+    color: rgb(156, 61, 61);
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+}
+
+.shopping-cart.show {
+    right: 0;
+}
+
+.shopping-cart .row {
+    display: flex;
+    justify-content: center;
+}
+
+.shopping-cart .col:nth-child(4) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.shopping-cart .quantity-icons {
+    margin: 10px 0;
+}
+
+.shopping-cart .quantity-icons span {
+    font-size: 2rem;
+    margin-left: 8px;
+    border: 1px solid #4b4747;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+
+.shopping-cart .quantity-icons span:hover {
+    color: rgb(75, 71, 71);
+    background-color: #c7a17a;
+  
+}
+
+.shopping-cart .btn {
+    color: rgb(255, 255, 255);
+    background-color: rgb(192, 107, 107);
+    opacity: 1;
+    transition: all ease-in-out .3s;
+    margin-top: 25px;
+}
+
+.shopping-cart .btn:hover {
+    opacity: 0.8;
+}
+
+.shopping-cart .row .col img {
+    width: 80%;
+}
+
+.shopping-cart hr {
+    height: 1px;
+    background-color: #c7a17a;
+}
+
+.shopping-cart .order-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0 50px 55px;
 }
 
 /* HOME SECTION */
@@ -587,7 +698,7 @@ header nav .dropdown:hover .dropdown-content {
 
 .menu-link {
     text-align: center;
-    margin: 30px 0;
+    margin: 80px 0;
 }
 
 .menu-link a {
@@ -686,7 +797,7 @@ header nav .dropdown:hover .dropdown-content {
 }
 
 .testimonials .stars i,
-.fa-solid  {
+.fa-solid {
     font-size: 1rem;
     padding-top: 25px;
     margin: 5px;
@@ -807,7 +918,7 @@ header nav .dropdown:hover .dropdown-content {
     justify-content: center;
     align-items: center;
     justify-content: space-between;
-}  
+}
 
 .contact-form .row .col form {
     flex-direction: column;
@@ -817,13 +928,14 @@ header nav .dropdown:hover .dropdown-content {
     margin: 0 auto;
 }
 
-.contact-form .row .col form input, 
+.contact-form .row .col form input,
 .contact-form .row .col form textarea {
-   background-color: transparent;
-   outline: none;
-   border: 1px solid var(--main-color);
-   color: rgb(199, 161, 122);
+    background-color: transparent;
+    outline: none;
+    border: 1px solid var(--main-color);
+    color: rgb(199, 161, 122);
 }
+
 .contact-form .row .col form input {
     border-radius: 10px;
     padding: 6px;
@@ -848,11 +960,11 @@ header nav .dropdown:hover .dropdown-content {
     color: rgb(0, 0, 0);
 }
 
-.contact-form .row .col:nth-child(2){
+.contact-form .row .col:nth-child(2) {
     margin-top: -50px;
 }
 
-.contact-form .row .col:nth-child(2) h3, 
+.contact-form .row .col:nth-child(2) h3,
 .contact-form .row .col:nth-child(2) p {
     margin-bottom: 25px;
 }

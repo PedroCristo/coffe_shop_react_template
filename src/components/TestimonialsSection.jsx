@@ -10,8 +10,6 @@ const TestimonialsSection = () => {
     "https://docs.google.com/spreadsheets/d/e/2PACX-1vRvtHuIHiy8QhygNdJZv_8s5bAga1OGFNqb5ny2qv5505uKipkxsf6hJ_Nd6p8bXXT9L1bqVwz5lKu8/pub?gid=675027668&single=true&output=csv"
   );
 
-  console.log(csvData);
-
   if (loading) {
     return <div>Loading...</div>;
   }

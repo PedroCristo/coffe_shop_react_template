@@ -5,7 +5,6 @@ const shopProductsData = [
     category: "coffee",
     social: [
       { id: 1, linkURL: "/", socialIcon: "far fa-heart" },
-      { id: 2, linkURL: "/", socialIcon: "fas fa-shopping-cart" },
       { id: 3, linkURL: "/", socialIcon: "fas fa-share-alt" },
       { id: 4, linkURL: "/", socialIcon: "fas fa-search" },
     ],
@@ -27,7 +26,6 @@ const shopProductsData = [
     category: "coffee",
     social: [
       { id: 1, linkURL: "/", socialIcon: "far fa-heart" },
-      { id: 2, linkURL: "/", socialIcon: "fas fa-shopping-cart" },
       { id: 3, linkURL: "/", socialIcon: "fas fa-share-alt" },
       { id: 4, linkURL: "/", socialIcon: "fas fa-search" },
     ],
@@ -49,7 +47,6 @@ const shopProductsData = [
     category: "coffee",
     social: [
       { id: 1, linkURL: "/", socialIcon: "far fa-heart" },
-      { id: 2, linkURL: "/", socialIcon: "fas fa-shopping-cart" },
       { id: 3, linkURL: "/", socialIcon: "fas fa-share-alt" },
       { id: 4, linkURL: "/", socialIcon: "fas fa-search" },
     ],
@@ -71,7 +68,6 @@ const shopProductsData = [
     category: "coffee",
     social: [
       { id: 1, linkURL: "/", socialIcon: "far fa-heart" },
-      { id: 2, linkURL: "/", socialIcon: "fas fa-shopping-cart" },
       { id: 3, linkURL: "/", socialIcon: "fas fa-share-alt" },
       { id: 4, linkURL: "/", socialIcon: "fas fa-search" },
     ],
@@ -93,7 +89,6 @@ const shopProductsData = [
     category: "coffee",
     social: [
       { id: 1, linkURL: "/", socialIcon: "far fa-heart" },
-      { id: 2, linkURL: "/", socialIcon: "fas fa-shopping-cart" },
       { id: 3, linkURL: "/", socialIcon: "fas fa-share-alt" },
       { id: 4, linkURL: "/", socialIcon: "fas fa-search" },
     ],
@@ -115,7 +110,6 @@ const shopProductsData = [
     category: "coffee",
     social: [
       { id: 1, linkURL: "/", socialIcon: "far fa-heart" },
-      { id: 2, linkURL: "/", socialIcon: "fas fa-shopping-cart" },
       { id: 3, linkURL: "/", socialIcon: "fas fa-share-alt" },
       { id: 4, linkURL: "/", socialIcon: "fas fa-search" },
     ],
@@ -137,7 +131,6 @@ const shopProductsData = [
     category: "coffee",
     social: [
       { id: 1, linkURL: "/", socialIcon: "far fa-heart" },
-      { id: 2, linkURL: "/", socialIcon: "fas fa-shopping-cart" },
       { id: 3, linkURL: "/", socialIcon: "fas fa-share-alt" },
       { id: 4, linkURL: "/", socialIcon: "fas fa-search" },
     ],
@@ -159,7 +152,6 @@ const shopProductsData = [
     category: "coffee",
     social: [
       { id: 1, linkURL: "/", socialIcon: "far fa-heart" },
-      { id: 2, linkURL: "/", socialIcon: "fas fa-shopping-cart" },
       { id: 3, linkURL: "/", socialIcon: "fas fa-share-alt" },
       { id: 4, linkURL: "/", socialIcon: "fas fa-search" },
     ],
@@ -180,7 +172,6 @@ const shopProductsData = [
     category: "machines",
     social: [
       { id: 1, linkURL: "/", socialIcon: "far fa-heart" },
-      { id: 2, linkURL: "/", socialIcon: "fas fa-shopping-cart" },
       { id: 3, linkURL: "/", socialIcon: "fas fa-share-alt" },
       { id: 4, linkURL: "/", socialIcon: "fas fa-search" },
     ],
@@ -202,7 +193,6 @@ const shopProductsData = [
     category: "machines",
     social: [
       { id: 1, linkURL: "/", socialIcon: "far fa-heart" },
-      { id: 2, linkURL: "/", socialIcon: "fas fa-shopping-cart" },
       { id: 3, linkURL: "/", socialIcon: "fas fa-share-alt" },
       { id: 4, linkURL: "/", socialIcon: "fas fa-search" },
     ],
@@ -224,7 +214,6 @@ const shopProductsData = [
     category: "machines",
     social: [
       { id: 1, linkURL: "/", socialIcon: "far fa-heart" },
-      { id: 2, linkURL: "/", socialIcon: "fas fa-shopping-cart" },
       { id: 3, linkURL: "/", socialIcon: "fas fa-share-alt" },
       { id: 4, linkURL: "/", socialIcon: "fas fa-search" },
     ],
@@ -246,7 +235,6 @@ const shopProductsData = [
     category: "machines",
     social: [
       { id: 1, linkURL: "/", socialIcon: "far fa-heart" },
-      { id: 2, linkURL: "/", socialIcon: "fas fa-shopping-cart" },
       { id: 3, linkURL: "/", socialIcon: "fas fa-share-alt" },
       { id: 4, linkURL: "/", socialIcon: "fas fa-search" },
     ],
@@ -268,7 +256,6 @@ const shopProductsData = [
     category: "machines",
     social: [
       { id: 1, linkURL: "/", socialIcon: "far fa-heart" },
-      { id: 2, linkURL: "/", socialIcon: "fas fa-shopping-cart" },
       { id: 3, linkURL: "/", socialIcon: "fas fa-share-alt" },
       { id: 4, linkURL: "/", socialIcon: "fas fa-search" },
     ],
@@ -290,7 +277,6 @@ const shopProductsData = [
     category: "machines",
     social: [
       { id: 1, linkURL: "/", socialIcon: "far fa-heart" },
-      { id: 2, linkURL: "/", socialIcon: "fas fa-shopping-cart" },
       { id: 3, linkURL: "/", socialIcon: "fas fa-share-alt" },
       { id: 4, linkURL: "/", socialIcon: "fas fa-search" },
     ],
@@ -312,7 +298,6 @@ const shopProductsData = [
     category: "machines",
     social: [
       { id: 1, linkURL: "/", socialIcon: "far fa-heart" },
-      { id: 2, linkURL: "/", socialIcon: "fas fa-shopping-cart" },
       { id: 3, linkURL: "/", socialIcon: "fas fa-share-alt" },
       { id: 4, linkURL: "/", socialIcon: "fas fa-search" },
     ],
@@ -334,7 +319,6 @@ const shopProductsData = [
     category: "machines",
     social: [
       { id: 1, linkURL: "/", socialIcon: "far fa-heart" },
-      { id: 2, linkURL: "/", socialIcon: "fas fa-shopping-cart" },
       { id: 3, linkURL: "/", socialIcon: "fas fa-share-alt" },
       { id: 4, linkURL: "/", socialIcon: "fas fa-search" },
     ],
@@ -355,7 +339,6 @@ const shopProductsData = [
     category: "cups",
     social: [
       { id: 1, linkURL: "/", socialIcon: "far fa-heart" },
-      { id: 2, linkURL: "/", socialIcon: "fas fa-shopping-cart" },
       { id: 3, linkURL: "/", socialIcon: "fas fa-share-alt" },
       { id: 4, linkURL: "/", socialIcon: "fas fa-search" },
     ],
@@ -377,7 +360,6 @@ const shopProductsData = [
     category: "cups",
     social: [
       { id: 1, linkURL: "/", socialIcon: "far fa-heart" },
-      { id: 2, linkURL: "/", socialIcon: "fas fa-shopping-cart" },
       { id: 3, linkURL: "/", socialIcon: "fas fa-share-alt" },
       { id: 4, linkURL: "/", socialIcon: "fas fa-search" },
     ],
@@ -399,7 +381,6 @@ const shopProductsData = [
     category: "cups",
     social: [
       { id: 1, linkURL: "/", socialIcon: "far fa-heart" },
-      { id: 2, linkURL: "/", socialIcon: "fas fa-shopping-cart" },
       { id: 3, linkURL: "/", socialIcon: "fas fa-share-alt" },
       { id: 4, linkURL: "/", socialIcon: "fas fa-search" },
     ],
@@ -421,7 +402,6 @@ const shopProductsData = [
     category: "cups",
     social: [
       { id: 1, linkURL: "/", socialIcon: "far fa-heart" },
-      { id: 2, linkURL: "/", socialIcon: "fas fa-shopping-cart" },
       { id: 3, linkURL: "/", socialIcon: "fas fa-share-alt" },
       { id: 4, linkURL: "/", socialIcon: "fas fa-search" },
     ],

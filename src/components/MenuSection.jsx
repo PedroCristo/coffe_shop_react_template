@@ -2,6 +2,7 @@
 import useFetchCSVData from "../data/externalDB/fetchData.js";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import { formatCurrency } from "./utilities/formatCurrency.js";
 
 function MenuSection({ homePage, menuPage, btnTitle, btnLink }) {
   const { csvData, loading, error } = useFetchCSVData('https://docs.google.com/spreadsheets/d/e/2PACX-1vRvtHuIHiy8QhygNdJZv_8s5bAga1OGFNqb5ny2qv5505uKipkxsf6hJ_Nd6p8bXXT9L1bqVwz5lKu8/pub?output=csv');
@@ -39,11 +40,11 @@ function MenuSection({ homePage, menuPage, btnTitle, btnLink }) {
               <div>
                 {item.oldPrice !== "" ? (
                   <div>
-                    <h4 className="menu-promotion">€ {item.oldPrice}</h4>
-                    <h4>€ {item.price}</h4>
+                    <h4 className="menu-promotion">{formatCurrency(item.oldPrice)}</h4>
+                    <h4>{formatCurrency(item.price)}</h4>
                   </div>
                 ) : (
-                  <h4>€ {item.price}</h4>
+                  <h4>{formatCurrency(item.price)}</h4>
                 )}
               </div>
             </div>

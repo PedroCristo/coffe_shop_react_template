@@ -1,14 +1,21 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import shopProductsData from "../data/shopProducts";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import { formatCurrency } from "./utilities/formatCurrency";
+import { useShoppingCart } from "./context/ShoppingCartContext";
 
-function ShopSection({ homePage, title, btnLink, btnTitle }) {
+function ShopSection({ homePage, title, btnLink, btnTitle, id }) {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [randomProducts, setRandomProducts] = useState([]);
+  const { increaseCartQuantity } = useShoppingCart();
 
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
+  };
+
+  const handleLinkClick = () => {
+    increaseCartQuantity(id); // Call the increaseCartQuantity function
   };
 
   useEffect(() => {
@@ -19,7 +26,7 @@ function ShopSection({ homePage, title, btnLink, btnTitle }) {
         : shopProductsData.filter(
             (product) => product.category === selectedCategory
           );
-  
+
     if (homePage) {
       // Shuffle the products array
       const shuffledProducts = filteredProducts.sort(() => Math.random() - 0.5);
@@ -30,7 +37,6 @@ function ShopSection({ homePage, title, btnLink, btnTitle }) {
       setRandomProducts(filteredProducts);
     }
   }, [selectedCategory, homePage]);
-  
 
   return (
     <div className="bg-shop" id="shop">
@@ -60,14 +66,14 @@ function ShopSection({ homePage, title, btnLink, btnTitle }) {
         </div>
       </div>
       <div className="shop-flex consts">
-        {randomProducts.map((product) => {
+        {randomProducts.map((item) => {
           const discountPercentage =
-            ((product.oldPrice - product.price) / product.oldPrice) * 100;
+            ((item.oldPrice - item.price) / item.oldPrice) * 100;
 
           return (
-            <div className={`shop1 mix ${product.category}`} key={product.id}>
+            <div className={`shop1 mix ${item.category}`} key={item.id}>
               <div className="shop-image">
-                <img src={product.imageUrl} alt={product.name} />
+                <img src={item.imageUrl} alt={item.name} />
                 {discountPercentage === 0 ? (
                   <div className="price red">Promotion not available</div>
                 ) : (
@@ -76,25 +82,26 @@ function ShopSection({ homePage, title, btnLink, btnTitle }) {
                   </div>
                 )}
                 <div className="social">
-                  {product.social.map((icon) => (
+                  {item.social.map((icon) => (
                     <a key={icon.id} href={icon.linkURL}>
                       <i className={icon.socialIcon}></i>
                     </a>
                   ))}
                 </div>
               </div>
-              <h2>{product.name}</h2>
+              <h2>{item.name}</h2>
               <div className="stars">
-                {product.stars.map((icon) => (
+                {item.stars.map((icon) => (
                   <i key={icon.id} className={icon.star}></i>
                 ))}
               </div>
-              <article>€{product.price.toFixed(2)}</article>
-              {product.price === product.oldPrice ? (
+              <article>{formatCurrency(item.price)}</article>
+              {item.price === item.oldPrice ? (
                 <span></span>
               ) : (
-                <span>€{product.oldPrice.toFixed(2)}</span>
+                <span>{formatCurrency(item.oldPrice)}</span>
               )}
+                <button className="btn ml-5" onClick={() => handleLinkClick(id)}>Add To Cart</button>
             </div>
           );
         })}
@@ -111,7 +118,6 @@ ShopSection.propTypes = {
   title: PropTypes.string.isRequired,
   btnLink: PropTypes.string.isRequired,
   btnTitle: PropTypes.string.isRequired,
- }
- 
+};
 
 export default ShopSection;
