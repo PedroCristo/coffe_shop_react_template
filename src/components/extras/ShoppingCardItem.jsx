@@ -15,8 +15,7 @@ export function CartItem({ id, quantity }) {
   if (item == null) return null;
 
   return (
-    <div>
-        test
+    <div className="shoping-cart">
       <div className="row">
         <div className="col">
           <img src={item.imageUrl} alt="" />

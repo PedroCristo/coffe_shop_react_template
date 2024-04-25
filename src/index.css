@@ -271,11 +271,11 @@ header nav .dropdown:hover .dropdown-content {
 }
 
 .shopping-cart .fas {
-    font-size: 3rem;
+    font-size: 2rem;
     color: rgb(156, 61, 61);
     position: absolute;
     right: 50px;
-    bottom: 50px;
+    top: 120px;
 }
 
 .shopping-cart.show {
